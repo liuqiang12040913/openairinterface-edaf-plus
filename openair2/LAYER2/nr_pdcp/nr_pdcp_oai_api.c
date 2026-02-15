@@ -1328,7 +1328,7 @@ bool nr_pdcp_data_req_drb(protocol_ctxt_t *ctxt_pP,
   deliver_pdu deliver_pdu_cb = rb->deliver_pdu;
 
 #if EDAF
-  LATSEQ_P(ctxt_pP->enb_flag ? "D gtp.in--pdcp.sdu" : "U ip.in--pdcp.sdu", "len%u::rb%d.sduid%d.Pbuf%u", sdu_buffer_size,rb_id,muiP,(uint8_t *)sdu_buffer);
+  LATSEQ_P(ctxt_pP->enb_flag ? "D sdap.sdu--pdcp.sdu" : "U ip.in--pdcp.sdu", "len%u::rb%d.sduid%d.Pbuf%u", sdu_buffer_size,rb_id,muiP,(uint8_t *)sdu_buffer);
 #endif
 
   nr_pdcp_manager_unlock(nr_pdcp_ue_manager);
