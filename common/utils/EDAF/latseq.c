@@ -139,6 +139,7 @@ int init_latseq(const char * appname, uint64_t cpufreq)
   g_latseq.mode = 0;
   g_latseq.is_disabled = 1;
   g_latseq.txpdu_counter = 0;
+  g_latseq.dl_txpdu_counter = 0;
 
   //synchronise time and rdtsc
   struct timespec ts;
