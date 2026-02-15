@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gitlab.eurecom.fr)",
+      "Bash(grep:*)",
+      "Bash(find:*)"
+    ]
+  }
+}
